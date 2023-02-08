@@ -152,7 +152,6 @@ header.main-header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
-    margin-top: 30px;
   }
 
   .main-section-list-paragraph {
@@ -403,6 +402,7 @@ footer .logo {
 .container-portfolio {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container-portfolio {
@@ -481,6 +481,7 @@ footer .logo {
 }
 
 .overlay {
+  width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -501,7 +502,6 @@ footer .logo {
 }
 
 .advantage-card {
-  width: 270px;
   height: 120px;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
@@ -562,6 +562,7 @@ footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: transparent;
 }
 
 .flex {
@@ -622,17 +623,15 @@ footer .logo {
   gap: 70px;
 }
 
-.button-examples {
-  border: none;
-  padding: 0;
-  background-color: var(--text-white-color);
-  //   transition: ease-in all 0.5s;
-
+.list__link {
+  text-decoration: none;
+  outline: transparent;
+  display: block;
   &:hover {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+}
+
+a:visited {
 }
